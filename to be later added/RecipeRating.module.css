@@ -1,0 +1,21 @@
+.recipeRating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff7f50;
+  }
+  
+  .star {
+    font-size: 18px;
+  }
+  
+  .ratingValue {
+    font-weight: bold;
+  }
+  
+  .reviewCount {
+    font-size: 14px;
+    color: #777;
+  }  

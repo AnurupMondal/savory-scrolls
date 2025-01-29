@@ -1,0 +1,21 @@
+.recipePage {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .content {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .mainSection {
+    flex: 2;
+  }
+  
+  .sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }  

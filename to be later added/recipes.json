@@ -1,0 +1,43 @@
+[
+    {
+      "id": 1,
+      "title": "Fluffy Chole Bhature",
+      "author": "Aditi",
+      "category": "Savory",
+      "rating": 4.8,
+      "imageUrl": "https://source.unsplash.com/800x600/?food",
+      "ingredients": [
+        "1 cup chickpeas (soaked overnight)",
+        "2 tbsp oil",
+        "1 large onion, finely chopped",
+        "1 tbsp ginger-garlic paste",
+        "1 green chili, chopped",
+        "1 tsp cumin seeds",
+        "1 tsp coriander powder",
+        "1/2 tsp turmeric",
+        "1 tsp garam masala",
+        "1 cup tomato puree",
+        "Salt to taste"
+      ],
+      "instructions": [
+        "Soak chickpeas overnight. Pressure cook with water and a pinch of salt for 15 minutes.",
+        "Heat oil in a pan. Add cumin seeds and let them splutter.",
+        "Stir in chopped onion and cook until it softens.",
+        "Add tomato puree and cook until oil separates.",
+        "Stir in turmeric, coriander powder, and garam masala.",
+        "Add cooked chickpeas and mix well. Simmer for 10-15 minutes.",
+        "Garnish with fresh coriander and serve hot."
+      ],
+      "nutrition": [
+        { "label": "Calories", "value": "426" },
+        { "label": "Protein", "value": "19g" },
+        { "label": "Carbohydrates", "value": "57g" },
+        { "label": "Fats", "value": "10g" },
+        { "label": "Fiber", "value": "9g" }
+      ],
+      "relatedRecipes": [
+        { "title": "Paneer Butter Masala", "imageUrl": "https://source.unsplash.com/50x50/?paneer" },
+        { "title": "Chicken Lababdar", "imageUrl": "https://source.unsplash.com/50x50/?chicken" }
+      ]
+    }
+  ]  
