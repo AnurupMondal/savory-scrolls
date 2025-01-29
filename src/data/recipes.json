@@ -1,0 +1,49 @@
+{
+  "recipes": [
+    {
+      "id": 1,
+      "title": "Fluffy Chole Bhature",
+      "author": "Anita",
+      "postedDate": "Yesterday",
+      "ratings": 5,
+      "reviews": 31,
+      "description": "A plate where comfort meets indulgence, and every bite is a celebration of spice, soul, and satisfaction.",
+      "image": "public/assets/chole-bhature.png",
+      "prepTime": "15 MIN",
+      "cookTime": "15 MIN",
+      "servings": "4 PEOPLE",
+      "ingredients": {
+        "For Chole (spiced chickpeas)": [
+          "1 cup dried chickpeas (or 2 cups canned chickpeas)",
+          "2 tablespoons oil or ghee",
+          "1 large onion (finely chopped)",
+          "2 tomatoes (pureed)",
+          "1 tablespoon ginger-garlic paste",
+          "1-2 green chilies (optional, chopped)",
+          "1 teaspoon cumin seeds",
+          "1/2 teaspoon turmeric powder",
+          "1 teaspoon red chili powder (adjust to taste)",
+          "1 teaspoon coriander powder",
+          "1 teaspoon garam masala",
+          "1 teaspoon chole masala (optional, for enhanced flavor)",
+          "1/2 teaspoon amchur (dry mango powder) or juice of 1/2 lemon",
+          "2 cups water (for cooking)",
+          "Salt to taste",
+          "Fresh coriander leaves (for garnish)"
+        ],
+        "Ingredients for Bhature (Fluffy Fried Bread)": [
+          "2 cups all-purpose flour (maida)",
+          "2 tablespoons semolina (sooji/rava)"
+        ]
+      },
+      "nutrition": {
+        "Protein": "625g",
+        "Calories": "25g",
+        "Carbohydrates": "95g",
+        "Fats": "25g",
+        "Fiber": "10g"
+      }
+    }
+  ]
+}
+
