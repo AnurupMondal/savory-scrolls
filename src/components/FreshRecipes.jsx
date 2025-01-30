@@ -17,7 +17,7 @@ const RecipeCard = ({ title, ratings, image }) => {
   );
 };
 
-// ✅ Add PropTypes for RecipeCard
+// PropTypes for RecipeCard
 RecipeCard.propTypes = {
   title: PropTypes.string.isRequired,
   ratings: PropTypes.number.isRequired,

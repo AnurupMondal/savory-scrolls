@@ -7,6 +7,7 @@ import FreshRecipes from "./components/FreshRecipes";
 import RecipeDetails from "./components/RecipeDetails";
 import IngredientsList from "./components/IngredientsList";
 import NutritionFacts from "./components/NutritionFacts";
+import Instructions from "./components/Instructions"; // ✅ Import Instructions Component
 import NewsletterSignup from "./components/NewsletterSignup";
 import "./App.css";
 
@@ -48,10 +49,17 @@ const App = () => {
         <div className="recipe-content">
           <div className="recipe-main">
             <IngredientsList ingredients={recipe.ingredients} />
+
+            {recipe.instructions && recipe.instructions.length > 0 ? (
+              <Instructions steps={recipe.instructions} />
+            ) : (
+              <p className="error-message">No instructions available.</p>
+            )}
           </div>
+
           <div className="recipe-sidebar">
             <NutritionFacts nutrition={recipe.nutrition} />
-            <FreshRecipes /> {/* ✅ Added Fresh Recipes Component */}
+            <FreshRecipes />
             <NewsletterSignup />
           </div>
         </div>

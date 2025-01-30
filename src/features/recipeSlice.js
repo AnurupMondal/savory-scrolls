@@ -1,11 +1,19 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchRecipes = createAsyncThunk("recipes/fetchRecipes", async () => {
-    const response = await fetch("src/data/recipes.json");
+  try {
+    const response = await fetch("/data/recipes.json");
     if (!response.ok) throw new Error("Failed to fetch recipes");
-    return response.json();
-  });
-  
+    const data = await response.json();
+    
+    if (!data.recipes) throw new Error("Invalid JSON structure");
+    
+    return data.recipes; // ✅ Ensure we return an array of recipes
+  } catch (error) {
+    throw new Error(error.message || "Unknown error fetching recipes");
+  }
+});
+
 const recipeSlice = createSlice({
   name: "recipes",
   initialState: {
@@ -14,11 +22,20 @@ const recipeSlice = createSlice({
     error: null,
   },
   reducers: {
+    // Add new recipes to Redux state
     addRecipe: (state, action) => {
       state.recipes.push(action.payload);
     },
+    // Remove a recipe by ID
     removeRecipe: (state, action) => {
       state.recipes = state.recipes.filter((recipe) => recipe.id !== action.payload);
+    },
+    // Update an existing recipe by ID
+    updateRecipe: (state, action) => {
+      const index = state.recipes.findIndex((recipe) => recipe.id === action.payload.id);
+      if (index !== -1) {
+        state.recipes[index] = action.payload;
+      }
     },
   },
   extraReducers: (builder) => {
@@ -29,7 +46,7 @@ const recipeSlice = createSlice({
       })
       .addCase(fetchRecipes.fulfilled, (state, action) => {
         state.loading = false;
-        state.recipes = action.payload.recipes; // Ensure correct structure
+        state.recipes = action.payload;
       })
       .addCase(fetchRecipes.rejected, (state, action) => {
         state.loading = false;
@@ -38,6 +55,6 @@ const recipeSlice = createSlice({
   },
 });
 
-// ✅ Ensure you export the reducer
-export const { addRecipe, removeRecipe } = recipeSlice.actions;
+// Export Actions and Reducer
+export const { addRecipe, removeRecipe, updateRecipe } = recipeSlice.actions;
 export default recipeSlice.reducer;

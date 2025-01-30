@@ -1,15 +1,19 @@
 import { useParams } from "react-router-dom";
-import recipesData from "../data/recipes.json";
+import { useSelector } from "react-redux";
 import RecipeHeader from "../components/RecipeHeader";
 import IngredientsList from "../components/IngredientsList";
 import NutritionFacts from "../components/NutritionFacts";
 import RecipeDetails from "../components/RecipeDetails";
+import Instructions from "../components/Instructions";
 import NewsletterSignup from "../components/NewsletterSignup";
 import "../styles/RecipeDetailsPage.css";
 
 const RecipeDetailsPage = () => {
   const { id } = useParams();
-  const recipe = recipesData.find((r) => r.id === parseInt(id));
+  const recipes = useSelector((state) => state.recipes.recipes); // Get recipes from Redux store
+  const recipe = recipes.find((r) => r.id === parseInt(id));
+
+  console.log("Recipe Data in Details Page:", recipe); // Debugging log
 
   if (!recipe) {
     return <div className="error-message">Recipe not found</div>;
@@ -25,7 +29,7 @@ const RecipeDetailsPage = () => {
         reviews={recipe.reviews}
         description={recipe.description}
       />
-      
+
       <div className="recipe-image-container">
         <img src={recipe.image} alt={recipe.title} className="recipe-image" />
       </div>
@@ -40,6 +44,13 @@ const RecipeDetailsPage = () => {
           />
           <h2>Ingredients</h2>
           <IngredientsList ingredients={recipe.ingredients} />
+
+          <h2>Instructions</h2>
+          {recipe.instructions && recipe.instructions.length > 0 ? (
+            <Instructions steps={recipe.instructions} />
+          ) : (
+            <p className="error-message">No instructions available.</p>
+          )}
         </div>
 
         {/* Right Sidebar */}
