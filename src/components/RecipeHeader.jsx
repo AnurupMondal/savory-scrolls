@@ -66,7 +66,7 @@ const RecipeHeader = ({ title, author, postedDate, initialRatings, reviews, desc
   );
 };
 
-// **✅ PropTypes Validation**
+// PropTypes Validation
 RecipeHeader.propTypes = {
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,

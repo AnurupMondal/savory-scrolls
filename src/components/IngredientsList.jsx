@@ -22,7 +22,7 @@ const IngredientsList = ({ ingredients }) => {
   );
 };
 
-// **✅ PropTypes Validation**
+// PropTypes Validation
 IngredientsList.propTypes = {
   ingredients: PropTypes.objectOf(PropTypes.arrayOf(PropTypes.string)).isRequired,
 };

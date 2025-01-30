@@ -6,7 +6,7 @@ const NewsletterSignup = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Add newsletter signup logic here
+    // newsletter signup logic (to be added)
     console.log("Submitted email:", email)
     setEmail("")
   }

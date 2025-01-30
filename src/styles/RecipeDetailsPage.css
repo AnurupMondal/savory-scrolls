@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: min(90vw, 1200px); /* Ensures it scales while maintaining spacing */
-  max-width: 1200px; /* Prevents it from becoming too wide */
+  width: min(90vw, 1200px);
+  max-width: 1200px;
   padding: 2rem;
 }
   
@@ -40,7 +40,7 @@
     gap: 2rem;
   }
   
-  /* Sidebar Section */
+  /* Sidebar Section */ 
   /* .recipe-sidebar {
     display: flex;
     flex-direction: column;

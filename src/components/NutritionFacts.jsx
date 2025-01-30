@@ -17,7 +17,7 @@ const NutritionFacts = ({ nutrition }) => {
   );
 };
 
-// **✅ PropTypes Validation**
+//PropTypes Validation
 NutritionFacts.propTypes = {
   nutrition: PropTypes.objectOf(PropTypes.string).isRequired,
 };

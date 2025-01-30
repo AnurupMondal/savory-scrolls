@@ -21,8 +21,8 @@
     box-shadow: none;
     border-radius: 0;
     width: 100%;
-    left: 0; /* Ensures full width */
-    transform: fixed; /* Removes unwanted shift */
+    left: 0;
+    transform: fixed;
   }
   
   /* Floating Navbar when Scrolling */
