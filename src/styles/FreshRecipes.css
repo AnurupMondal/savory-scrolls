@@ -1,44 +1,41 @@
 .fresh-recipes {
-    margin: 0px 0;
-    padding: 10px;
+    margin: 0;
+    padding: clamp(5px, 2vw, 20px);
 }
 
 .fresh-recipes__title {
-    font-size: 1.4rem;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
 }
 
-/* Fresh Recipes List */
 .fresh-recipes__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: clamp(10px, 3vw, 20px);
 }
 
-/* Recipe Card Layout */
 .recipe-card {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     background: #fff;
-    padding: 5px;
+    /* padding: 1rem; */
     border-radius: 12px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
     gap: 10px;
-    width: 100%;
+    width: 95%;
+    max-width: 500px;
 }
 
-/* Recipe Image Styling */
 .recipe-card__image {
-    width: 80px;
-    height: 80px;
+    width: clamp(60px, 10vw, 100px);
+    height: clamp(60px, 10vw, 100px);
     border-radius: 10px;
     object-fit: cover;
     flex-shrink: 0;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Recipe Info Section */
 .recipe-card__content {
     display: flex;
     flex-direction: column;
@@ -46,43 +43,27 @@
     flex-grow: 1;
 }
 
-/* Rating Section */
 .recipe-card__rating {
     display: flex;
     align-items: center;
     gap: 2px;
-    /* padding: 6px 12px; */
     border-radius: 20px;
     background: rgba(255, 193, 7, 0.15);
-    transition: background 0.3s ease-in-out;
     align-self: flex-start;
     justify-content: center;
 }
 
-/* White Rounded Background for Rating */
-/* .recipe-card__rating-container {
-    background: white;
-    border-radius: 20px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-} */
-
-/* Star Icons */
 .star {
-    font-size: 18px;
+    font-size: clamp(14px, 2vw, 18px);
     color: #ddd;
-    transition: color 0.2s;
 }
 
 .star.filled {
     color: #f4c430;
 }
 
-/* Recipe Title */
 .recipe-card__title {
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1.2rem);
     font-weight: 600;
     color: #333;
     margin-top: 6px;
