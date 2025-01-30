@@ -1,42 +1,49 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Page Background */
+body {
+  background: url('../assets/background.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Main Container */
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Button Hover Effect */
+button:hover {
+  opacity: 0.9;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Form Input Focus Effect */
+input:focus {
+  border: 1px solid #b5651d;
+  outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-signup-container {
+    flex-direction: column;
+    width: 90%;
+    padding: 1.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .left-section {
+    text-align: center;
+    padding: 1rem;
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
