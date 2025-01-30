@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&display=swap');
+
+
 .hero-container {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     padding: 2rem;
     background: #fff;
@@ -8,15 +10,18 @@
   
   .hero-content {
     max-width: 50%;
+    height:100%;
   }
   
   .hero-content h2 {
     font-size: 2.5rem;
+    font-family: 'Poltawski Nowy', serif;
     font-weight: bold;
   }
   
   .hero-content p {
     font-size: 1.2rem;
+    font-family: 'poppins',serif;
     margin-top: 1rem;
   }
   
@@ -27,7 +32,12 @@
     font-weight: bold;
     margin-top: 1rem;
   }
-  
+  span {
+    font-family: 'poppins',serif;
+  }
+  span img{
+    margin-right: 10px;
+  }
   .hero-image img {
     width: 100%;
     max-width: 500px;
