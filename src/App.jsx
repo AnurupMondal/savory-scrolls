@@ -1,22 +1,30 @@
-import { useState, useEffect } from "react"
-import Navbar from "./components/Navbar"
-import RecipeHeader from "./components/RecipeHeader"
-import RecipeDetails from "./components/RecipeDetails"
-import IngredientsList from "./components/IngredientsList"
-import NutritionFacts from "./components/NutritionFacts"
-import NewsletterSignup from "./components/NewsletterSignup"
-import recipesData from "./data/recipes.json"
-import "./App.css"
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchRecipes } from "./features/recipeSlice"; // ✅ Ensure this is properly exported
+import Navbar from "./components/Navbar";
+import RecipeHeader from "./components/RecipeHeader";
+import FreshRecipes from "./components/FreshRecipes";
+import RecipeDetails from "./components/RecipeDetails";
+import IngredientsList from "./components/IngredientsList";
+import NutritionFacts from "./components/NutritionFacts";
+import NewsletterSignup from "./components/NewsletterSignup";
+import "./App.css";
 
 const App = () => {
-  const [recipe, setRecipe] = useState(null)
+  const dispatch = useDispatch();
+  const recipes = useSelector((state) => state.recipes.recipes);
+  const loading = useSelector((state) => state.recipes.loading);
+  const error = useSelector((state) => state.recipes.error);
 
   useEffect(() => {
-    // In a real app, you might fetch this based on route params
-    setRecipe(recipesData.recipes[0])
-  }, [])
+    dispatch(fetchRecipes()); // ✅ Fetch recipes when app loads
+  }, [dispatch]);
 
-  if (!recipe) return <div>Loading...</div>
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error}</div>;
+  if (!recipes.length) return <div>No recipes found</div>;
+
+  const recipe = recipes[0]; // Display first recipe for now
 
   return (
     <div className="app">
@@ -43,12 +51,13 @@ const App = () => {
           </div>
           <div className="recipe-sidebar">
             <NutritionFacts nutrition={recipe.nutrition} />
+            <FreshRecipes /> {/* ✅ Added Fresh Recipes Component */}
             <NewsletterSignup />
           </div>
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

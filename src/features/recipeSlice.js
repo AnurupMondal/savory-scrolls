@@ -1,32 +1,43 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const initialState = {
-  recipes: [],
-  loading: false,
-  error: null,
-};
-
+export const fetchRecipes = createAsyncThunk("recipes/fetchRecipes", async () => {
+    const response = await fetch("src/data/recipes.json");
+    if (!response.ok) throw new Error("Failed to fetch recipes");
+    return response.json();
+  });
+  
 const recipeSlice = createSlice({
-  name: 'recipes',
-  initialState,
+  name: "recipes",
+  initialState: {
+    recipes: [],
+    loading: false,
+    error: null,
+  },
   reducers: {
     addRecipe: (state, action) => {
       state.recipes.push(action.payload);
     },
     removeRecipe: (state, action) => {
-      state.recipes = state.recipes.filter(recipe => recipe.id !== action.payload);
+      state.recipes = state.recipes.filter((recipe) => recipe.id !== action.payload);
     },
-    setLoading: (state, action) => {
-      state.loading = action.payload;
-    },
-    setError: (state, action) => {
-      state.error = action.payload;
-    },
+  },
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchRecipes.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchRecipes.fulfilled, (state, action) => {
+        state.loading = false;
+        state.recipes = action.payload.recipes; // Ensure correct structure
+      })
+      .addCase(fetchRecipes.rejected, (state, action) => {
+        state.loading = false;
+        state.error = action.error.message;
+      });
   },
 });
 
-// Export actions for dispatching
-export const { addRecipe, removeRecipe, setLoading, setError } = recipeSlice.actions;
-
-// Export reducer to add to store
+// ✅ Ensure you export the reducer
+export const { addRecipe, removeRecipe } = recipeSlice.actions;
 export default recipeSlice.reducer;
