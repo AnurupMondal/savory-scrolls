@@ -1,11 +1,11 @@
 .recipe-details-page {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 100%;
-    padding: 2rem;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(90vw, 1200px); /* Ensures it scales while maintaining spacing */
+  max-width: 1200px; /* Prevents it from becoming too wide */
+  padding: 2rem;
+}
   
   .recipe-image-container {
     position: relative;
@@ -41,7 +41,7 @@
   }
   
   /* Sidebar Section */
-  .recipe-sidebar {
+  /* .recipe-sidebar {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -51,5 +51,5 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 350px;
-  }
+  } */
   

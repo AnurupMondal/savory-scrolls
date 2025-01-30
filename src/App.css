@@ -20,8 +20,8 @@
 
 .recipe-image-container {
   position: relative;
-  width: 80%;
-  height: 600px;
+  width: 70%;
+  aspect-ratio: 16 / 9;  /* Maintains a consistent ratio */
   border-radius: 10px;
   overflow: hidden;
   margin: 2rem auto;
