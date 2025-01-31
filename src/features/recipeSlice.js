@@ -8,7 +8,7 @@ export const fetchRecipes = createAsyncThunk("recipes/fetchRecipes", async () =>
     
     if (!data.recipes) throw new Error("Invalid JSON structure");
     
-    return data.recipes; // ✅ Ensure we return an array of recipes
+    return data.recipes; // Ensure we return an array of recipes
   } catch (error) {
     throw new Error(error.message || "Unknown error fetching recipes");
   }
