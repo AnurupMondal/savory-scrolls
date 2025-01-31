@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Search } from "lucide-react";
 import "../styles/Navbar.css";
-import logo from "../assets/savoryscrolls.png";
+import logo from "../assets/sitelogo.png";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);

@@ -1,22 +1,23 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Home/Hero";
-// import Categories from "../components/Home/Categories";
-// import Newsletter from "../components/Home/Newsletter";
-// import Recipes from "../components/Home/Recipes";
+import "../Styles/Home.css"
+import Categories from "../components/Home/Categories";
+import Newsletter from "../components/Home/Newsletter";
+import Browse from "../components/Home/Browse";
 // import Pagination from "../components/Home/Pagination";
-// import Footer from "../components/Home/Footer";
+import Footer from "../components/Home/Footer";
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen overflow-x-hidden">
+    <div className="main">
       <Navbar />
       <Hero />
-      {/* <Categories />
+      <Categories />
       <Newsletter />
-      <Recipes />
-      <Pagination />
-      <Footer /> */}
+      <Browse />
+      {/* <Pagination /> */}
+      <Footer />
     </div>
   );
 };

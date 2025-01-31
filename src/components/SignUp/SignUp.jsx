@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../Styles/SignUp.css";
 import facebookLogo from "../../assets/facebooklogo.png";
 import googleLogo from "../../assets/googlelogo.png";
-import logo1 from "../../assets/Logo.png";
+import logo1 from "../../assets/sitelogo.png";
 
 const Signup = () => {
     const [isSignup, setIsSignup] = useState(true);
