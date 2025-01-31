@@ -1,19 +1,22 @@
-import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-import viteLogo from './assets/savoryscrolls.png'
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import SignUp from './components/SignUp/SignUp';
-import Home from './pages/Home'
-import './App.css'
+import Home from './pages/Home';
+import './App.css';
 
 function App() {
-
-
   return (
     <div className="App">
-      {/* <SignUp /> */}
-      <Home />
+      <BrowserRouter>
+        <Routes>
+          {/* Redirect from "/" to "/home" */}
+          <Route path="/" element={<Navigate to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          {/* <Route path="/recipeDetail" element={<RecipeDetailsPage />} /> */}
+        </Routes>
+      </BrowserRouter>
     </div>
-  )
+  );
 }
 
 export default App;

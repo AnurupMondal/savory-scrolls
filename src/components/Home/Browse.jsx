@@ -1,13 +1,11 @@
 import React, { useState } from "react";
+import { Bookmark } from "lucide-react";
 import Pagination from "./Pagination";
-import "../../Styles/Browse.css";
+import "../../Styles/Home/Browse.css";
 import butterMasala from "../../assets/Browse/Butter-Masala.png";
 import alooGobhi from "../../assets/Browse/Aloogobhi.png";
 import Lassi from "../../assets/Browse/Lassi.png";
 import Samosa from "../../assets/Browse/Samosa.png";
-
-
-
 
 const recipes = [
   { id: 1, name: "Paneer Butter Masala", image: butterMasala, rating: 4.5, description: "A rich and creamy tomato-based curry with paneer." },
@@ -61,7 +59,11 @@ const Browse = () => {
       {displayedRecipes.map((recipe) => (
         <div key={recipe.id} className="recipe-card">
           <div className="bookmark-icon" onClick={() => toggleBookmark(recipe.id)}>
-            {bookmarked[recipe.id] ? "🔖" : "📌"}
+            <Bookmark
+              color={bookmarked[recipe.id] ? "#FFD700" : "#000"}
+              fill={bookmarked[recipe.id] ? "#FFD700" : "none"}
+              size={24}
+            />
           </div>
           <img src={recipe.image} alt={recipe.name} className="recipe-image" />
           <div className="sub-card">

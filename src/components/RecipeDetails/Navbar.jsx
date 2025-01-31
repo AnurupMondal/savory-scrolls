@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { Search } from "lucide-react";
-import "../styles/Navbar.css";
-import logo from "../assets/sitelogo.png";
+import "../Styles/RecipeDetails/Navbar.css";
+import logo from "../../assets/sitelogo.png";
 
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
-  const navigate = useNavigate(); // Initialize useNavigate
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -49,7 +47,6 @@ const Navbar = () => {
 
       <div className="navbar-actions">
         <Search className="search-icon" />
-        <button className="p-2" onClick={() => navigate("/signup")}>Login/Signup</button>
       </div>
     </nav>
   );

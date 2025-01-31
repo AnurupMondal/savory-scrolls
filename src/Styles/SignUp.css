@@ -28,6 +28,12 @@
     width: 350px; 
 }  */
 
+.close-button{
+    display: flex;
+    width:100%;
+    flex-direction: row-reverse;
+}
+
 .expanded-form {
     height: auto;
 }

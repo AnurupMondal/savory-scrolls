@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../Styles/SignUp.css";
 import facebookLogo from "../../assets/facebooklogo.png";
 import googleLogo from "../../assets/googlelogo.png";
@@ -6,6 +7,7 @@ import logo1 from "../../assets/sitelogo.png";
 
 const Signup = () => {
     const [isSignup, setIsSignup] = useState(true);
+    const navigate = useNavigate();
 
     return (
         <div className="login-signup-page">
@@ -23,6 +25,9 @@ const Signup = () => {
                     </p>
                 </div>
                 <div className="right-section">
+                    <div className="close-button">
+                    <button onClick={() => navigate("/")}>✖</button>
+                    </div>
                     <h2>{isSignup ? "Create an Account" : "Log In"}</h2>
                     <div className="social-login-container">
                         <img src={facebookLogo} alt="Facebook" className="social-logo" />
@@ -57,7 +62,7 @@ const Signup = () => {
                         <button type="submit">{isSignup ? "Sign Up" : "Log In"}</button>
                     </form>
                     <p className="toggle-auth">
-                        {isSignup ? "Already have an account?" : "Don't have an account?"}{" "}
+                        {isSignup ? "Already have an account?" : "Don't have an account?"} {" "}
                         <span onClick={() => setIsSignup(!isSignup)} className="small-login-btn">
                             {isSignup ? "Log In" : "Sign Up"}
                         </span>

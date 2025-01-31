@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Home/Hero";
-import "../Styles/Home.css"
+import "../Styles/Home/Home.css"
 import Categories from "../components/Home/Categories";
 import Newsletter from "../components/Home/Newsletter";
 import Browse from "../components/Home/Browse";
