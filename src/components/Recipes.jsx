@@ -4,8 +4,6 @@ import { fetchRecipes } from "../redux/recipeSlice"; // Import Redux action
 import { Link } from "react-router-dom";
 import "../styles/Recipes.css";
 
-
-
 const Recipes = () => {
   const dispatch = useDispatch();
   const { recipes, loading, error } = useSelector((state) => state.recipes);
