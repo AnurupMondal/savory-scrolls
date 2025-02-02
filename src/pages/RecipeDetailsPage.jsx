@@ -47,7 +47,7 @@ const RecipeDetailsPage = () => {
 
         <div className="recipe-image-container">
           <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-        </div>
+        </div>  
 
         <div className="recipe-content">
           {/* Left Main Content */}

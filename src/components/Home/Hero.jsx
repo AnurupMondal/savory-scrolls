@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux"; // Import Redux selector
+import { useSelector } from "react-redux";
 import "../../Styles/Home/Hero.css";
 import trend from "../../assets/trend.png";
 import arrow from "../../assets/arrow.png";
