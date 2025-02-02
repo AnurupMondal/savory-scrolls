@@ -11,12 +11,19 @@ import "../Styles/RecipeDetails/RecipeDetailsPage.css";
 const RecipeDetailsPage = () => {
   const { id } = useParams();
   const recipes = useSelector((state) => state.recipes.recipes); // Get recipes from Redux store
-  const recipe = recipes.find((r) => r.id === parseInt(id));
+
+  // Convert id to a number and ensure it matches
+  const recipe = recipes?.find((r) => Number(r.id) === Number(id));
 
   console.log("Recipe Data in Details Page:", recipe); // Debugging log
 
   if (!recipe) {
-    return <div className="error-message">Recipe not found</div>;
+    return (
+      <div className="error-message">
+        <h2>Recipe not found</h2>
+        <p>Sorry, the recipe you are looking for does not exist.</p>
+      </div>
+    );
   }
 
   return (
@@ -54,10 +61,10 @@ const RecipeDetailsPage = () => {
         </div>
 
         {/* Right Sidebar */}
-        <div className="recipe-sidebar">
+        <aside className="recipe-sidebar">
           <NutritionFacts nutrition={recipe.nutrition} />
           <NewsletterSignup />
-        </div>
+        </aside>
       </div>
     </div>
   );

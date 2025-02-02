@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate, Link } from "react-router-dom"; // Use Link instead of <a>
 import { Search } from "lucide-react";
 import "../styles/Navbar.css";
 import logo from "../assets/sitelogo.png";
@@ -7,7 +7,7 @@ import logo from "../assets/sitelogo.png";
 const Navbar = () => {
   const [scrolling, setScrolling] = useState(false);
   const [scrollDirection, setScrollDirection] = useState(null);
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
@@ -35,21 +35,23 @@ const Navbar = () => {
 
   return (
     <nav className={`navbar ${scrolling ? "floating" : "top"} ${scrollDirection === "down" ? "hidden" : "visible"}`}>
-      <a href="/" className="navbar-logo">
+      <Link to="/" className="navbar-logo">
         <img src={logo} alt="Savory Scrolls Logo" className="logo-image" />
-      </a>
+      </Link>
 
       <div className="navbar-links">
-        {["Homepage", "Recipes", "Popular", "Buy"].map((item) => (
-          <a key={item} href={`/${item.toLowerCase()}`} className="nav-link">
+        {["Home", "Recipes", "Popular", "Buy"].map((item) => (
+          <Link key={item} to={`/${item.toLowerCase()}`} className="nav-link">
             {item}
-          </a>
+          </Link>
         ))}
       </div>
 
       <div className="navbar-actions">
         <Search className="search-icon" />
-        <button className="p-2" onClick={() => navigate("/signup")}>Login/Signup</button>
+        <button className="p-2" onClick={() => navigate("/signup")}>
+          Login/Signup
+        </button>
       </div>
     </nav>
   );
