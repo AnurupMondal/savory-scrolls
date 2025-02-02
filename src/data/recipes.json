@@ -31,9 +31,16 @@
           "Salt to taste",
           "Fresh coriander leaves (for garnish)"
         ],
-        "Ingredients for Bhature (Fluffy Fried Bread)": [
+        "For Bhature (Fluffy Fried Bread)": [
           "2 cups all-purpose flour (maida)",
-          "2 tablespoons semolina (sooji/rava)"
+          "2 tablespoons semolina (sooji/rava)",
+          "1/2 teaspoon baking powder",
+          "1/4 teaspoon baking soda",
+          "1/2 teaspoon sugar",
+          "1/4 teaspoon salt",
+          "1/4 cup plain yogurt (curd)",
+          "Water (as needed for kneading)",
+          "Oil (for deep frying)"
         ]
       },
       "nutrition": {
@@ -42,8 +49,76 @@
         "Carbohydrates": "95g",
         "Fats": "25g",
         "Fiber": "10g"
-      }
+      },
+      "instructions": [
+        "Soak chickpeas overnight. Pressure cook with water and a pinch of salt until soft.",
+        "Heat oil in a pan. Add cumin seeds and let them splutter.",
+        "Stir in tomato puree and cook until oil separates.",
+        "Saute onions until golden. Add ginger-garlic paste and green chilies.",
+        "Add cooked chickpeas with water. Simmer for 10-15 minutes.",
+        "Add chole masala, amchur powder, and salt. Garnish with coriander leaves.",
+        "In a bowl, mix flour, semolina, baking powder, baking soda, sugar, and salt.",
+        "Add yogurt and mix. Gradually add water to knead a soft dough.",
+        "Cover with a damp cloth and rest for 1-2 hours.",
+        "Divide dough into balls. Roll each into a round or oval shape.",
+        "Heat oil in a deep pan. Fry bhature until golden and puffed.",
+        "Drain on paper towels and serve hot with chole."
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Paneer Butter Masala",
+      "author": "Rajesh",
+      "postedDate": "Today",
+      "ratings": 4.8,
+      "reviews": 45,
+      "description": "A rich, creamy, and aromatic paneer dish with a buttery tomato-based gravy.",
+      "image": "public/assets/paneer-butter-masala.png",
+      "prepTime": "10 MIN",
+      "cookTime": "20 MIN",
+      "servings": "4 PEOPLE",
+      "ingredients": {
+        "For the Gravy": [
+          "2 tablespoons butter",
+          "1 tablespoon oil",
+          "1 large onion (finely chopped)",
+          "3 tomatoes (pureed)",
+          "1 tablespoon ginger-garlic paste",
+          "1-2 green chilies (chopped)",
+          "1 teaspoon red chili powder",
+          "1 teaspoon garam masala",
+          "1/2 teaspoon turmeric powder",
+          "1 teaspoon coriander powder",
+          "1 teaspoon kasuri methi (dried fenugreek leaves)",
+          "1/2 cup heavy cream",
+          "Salt to taste",
+          "1/2 teaspoon sugar (optional)"
+        ],
+        "For the Paneer": [
+          "250g paneer (cottage cheese, cut into cubes)",
+          "1/4 teaspoon turmeric powder",
+          "1/2 teaspoon red chili powder",
+          "1/2 teaspoon salt",
+          "1 tablespoon oil (for shallow frying)"
+        ]
+      },
+      "nutrition": {
+        "Protein": "15g",
+        "Calories": "350g",
+        "Carbohydrates": "25g",
+        "Fats": "20g",
+        "Fiber": "5g"
+      },
+      "instructions": [
+        "Heat oil in a pan and lightly fry paneer cubes with turmeric, chili powder, and salt. Set aside.",
+        "In the same pan, add butter and oil. Sauté onions until golden brown.",
+        "Add ginger-garlic paste and sauté for a minute until aromatic.",
+        "Pour in tomato puree, red chili powder, turmeric, and coriander powder. Cook until oil separates.",
+        "Add kasuri methi, garam masala, sugar, and salt. Mix well.",
+        "Stir in heavy cream and mix until smooth and creamy.",
+        "Add the fried paneer cubes to the gravy and let it simmer for 5 minutes.",
+        "Garnish with fresh coriander and serve hot with naan or rice."
+      ]
     }
   ]
 }
-
