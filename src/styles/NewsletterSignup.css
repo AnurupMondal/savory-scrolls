@@ -1,0 +1,41 @@
+.newsletter-signup {
+    background-color: #ffd7c9;
+    padding: 1.5rem;
+    /* border-radius: 0.5rem; */
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+    font-family: serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-description {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+  }
+  
+  .newsletter-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff642f;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #9f4107;
+  }  

@@ -1,0 +1,217 @@
+/* Fullscreen Background Styling */
+.login-signup-page {
+    width: 100vw;
+    height: 100vh;
+    background: url("../assets/loginBack.png") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-container {
+    width: 85%;
+    height: 85%;
+    padding: 2rem;
+    display: flex;
+    background: #EFE8E8;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 30px 30px 30px rgba(180, 219, 238, 0.7);
+}
+
+/* .signup-mode {
+    width: 450px; 
+}*/
+
+/* .login-mode {
+    width: 350px; 
+}  */
+
+.close-button{
+    display: flex;
+    width:100%;
+    flex-direction: row-reverse;
+}
+
+.expanded-form {
+    height: auto;
+}
+
+.compact-form {
+    height: 410px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.right-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-logo {
+    width: 15rem;
+    height: 8rem;
+    display: block;
+    margin: 0;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.tagLine {
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: #333;
+    text-align: left;
+    max-width: 80%;
+    margin: 20px auto;
+    line-height: 1.4;
+    text-shadow: 18px 18px 3.62px rgba(0, 0, 0, 0.2);
+}
+
+.social-login-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-logo {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+    transform: scale(1.1);
+}
+
+.or-divider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+.line {
+    flex: 1;
+    height: 1px;
+    background-color: #888;
+
+}
+
+.or-divider {
+    margin: 0 10px;
+    font-size: 20px;
+    color: #888;
+    white-space: nowrap;
+}
+
+
+
+
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 43px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    /* Adjust the spacing between the fields */
+}
+
+.toggle-auth {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Regular weight */
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    /* Adds space between the label and the input field */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+input {
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: white;
+    width: 100%;
+}
+
+
+button {
+    padding: 10px;
+    background: #928783;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Small Login/Signup Button */
+.small-login-btn {
+    padding: 5px 10px;
+    background: rgba(230, 152, 84, 0.759);
+    /* Light orange color */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+    /* Y-axis shadow with blur */
+    transition: transform 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    /* Regular weight */
+    font-size: 15px;
+    /* 15px size */
+}
+
+.small-login-btn:hover {
+    transform: scale(1.05);
+    /* Button hover effect */
+}
+
+
+@media (max-width: 768px) {
+    .login-signup-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
