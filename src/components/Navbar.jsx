@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate, Link } from "react-router-dom"; // Use Link instead of <a>
+import { useNavigate, Link } from "react-router-dom";
 import { Search } from "lucide-react";
 import "../styles/Navbar.css";
 import logo from "../assets/sitelogo.png";
@@ -40,12 +40,18 @@ const Navbar = () => {
       </Link>
 
       <div className="navbar-links">
-        {["Home", "Recipes", "Popular", "Buy"].map((item) => (
-          <Link key={item} to={`/${item.toLowerCase()}`} className="nav-link">
-            {item}
+        {[
+          { name: "Home", path: "/" },
+          { name: "Recipes", path: "/recipes" },
+          { name: "Popular", path: "/popular" },
+          { name: "Buy", path: "/buy" },
+        ].map(({ name, path }) => (
+          <Link key={name} to={path} className="nav-link">
+            {name}
           </Link>
         ))}
       </div>
+
 
       <div className="navbar-actions">
         <Search className="search-icon" />

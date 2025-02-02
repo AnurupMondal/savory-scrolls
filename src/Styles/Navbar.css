@@ -17,7 +17,7 @@
 
 /* When at the Top - Normal Rectangular Navbar */
 .navbar.top {
-  /* background: white; */
+  background: white;
   /* border-bottom: 1px solid #e5e7eb; */
   box-shadow: none;
   border-radius: 0;

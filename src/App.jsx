@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import SignUp from "./components/SignUp/SignUp";
 import Home from "./pages/Home";
 import RecipeDetailsPage from "./pages/RecipeDetailsPage";
@@ -10,13 +10,15 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/recipe/:id" element={<RecipeDetailsPage />} />
-      </Routes>
+      
+      <main className="main-content"> {/* Wrapper for routed content */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/recipe/:id" element={<RecipeDetailsPage />} />
+        </Routes>
+      </main>
 
       <Footer />
     </div>
