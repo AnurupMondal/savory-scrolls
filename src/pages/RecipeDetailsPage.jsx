@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Home/Footer";
 import RecipeHeader from "../components/RecipeDetails/RecipeHeader";
 import IngredientsList from "../components/RecipeDetails/IngredientsList";
 import NutritionFacts from "../components/RecipeDetails/NutritionFacts";
@@ -20,53 +22,61 @@ const RecipeDetailsPage = () => {
   if (!recipe) {
     return (
       <div className="error-message">
-        <h2>Recipe not found</h2>
-        <p>Sorry, the recipe you are looking for does not exist.</p>
+        <Navbar />
+        <main>
+          <h2>Recipe not found</h2>
+          <p>Sorry, the recipe you are looking for does not exist.</p>
+        </main>
+        <Footer />
       </div>
     );
   }
 
   return (
-    <div className="recipe-details-page">
-      <RecipeHeader
-        title={recipe.title}
-        author={recipe.author}
-        postedDate={recipe.postedDate}
-        ratings={recipe.ratings}
-        reviews={recipe.reviews}
-        description={recipe.description}
-      />
+    <>
+      <Navbar />
+      <main className="recipe-details-page">
+        <RecipeHeader
+          title={recipe.title}
+          author={recipe.author}
+          postedDate={recipe.postedDate}
+          ratings={recipe.ratings}
+          reviews={recipe.reviews}
+          description={recipe.description}
+        />
 
-      <div className="recipe-image-container">
-        <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-      </div>
-
-      <div className="recipe-content">
-        {/* Left Main Content */}
-        <div className="recipe-main">
-          <RecipeDetails
-            prepTime={recipe.prepTime}
-            cookTime={recipe.cookTime}
-            servings={recipe.servings}
-          />
-          <h2>Ingredients</h2>
-          <IngredientsList ingredients={recipe.ingredients} />
-
-          <h2>Instructions</h2>
-          {recipe.instructions && recipe.instructions.length > 0 ? (
-            <Instructions steps={recipe.instructions} />
-          ) : (
-            <p className="error-message">No instructions available.</p>
-          )}
+        <div className="recipe-image-container">
+          <img src={recipe.image} alt={recipe.title} className="recipe-image" />
         </div>
 
-        {/* Right Sidebar */}
-        <aside className="recipe-sidebar">
-          <NutritionFacts nutrition={recipe.nutrition} />
-          <NewsletterSignup />
-        </aside>
-      </div>
-    </div>
+        <div className="recipe-content">
+          {/* Left Main Content */}
+          <div className="recipe-main">
+            <RecipeDetails
+              prepTime={recipe.prepTime}
+              cookTime={recipe.cookTime}
+              servings={recipe.servings}
+            />
+            <h2>Ingredients</h2>
+            <IngredientsList ingredients={recipe.ingredients} />
+
+            <h2>Instructions</h2>
+            {recipe.instructions && recipe.instructions.length > 0 ? (
+              <Instructions steps={recipe.instructions} />
+            ) : (
+              <p className="error-message">No instructions available.</p>
+            )}
+          </div>
+
+          {/* Right Sidebar */}
+          <aside className="recipe-sidebar">
+            <NutritionFacts nutrition={recipe.nutrition} />
+            <NewsletterSignup />
+          </aside>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 
