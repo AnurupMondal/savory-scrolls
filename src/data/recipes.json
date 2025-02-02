@@ -14,33 +14,19 @@
       "servings": "4 PEOPLE",
       "ingredients": {
         "For Chole (spiced chickpeas)": [
-          "1 cup dried chickpeas (or 2 cups canned chickpeas)",
-          "2 tablespoons oil or ghee",
-          "1 large onion (finely chopped)",
+          "1 cup dried chickpeas",
+          "2 tablespoons oil",
+          "1 large onion (chopped)",
           "2 tomatoes (pureed)",
-          "1 tablespoon ginger-garlic paste",
-          "1-2 green chilies (optional, chopped)",
           "1 teaspoon cumin seeds",
-          "1/2 teaspoon turmeric powder",
-          "1 teaspoon red chili powder (adjust to taste)",
-          "1 teaspoon coriander powder",
-          "1 teaspoon garam masala",
-          "1 teaspoon chole masala (optional, for enhanced flavor)",
-          "1/2 teaspoon amchur (dry mango powder) or juice of 1/2 lemon",
-          "2 cups water (for cooking)",
-          "Salt to taste",
-          "Fresh coriander leaves (for garnish)"
+          "1 teaspoon garam masala"
         ],
         "For Bhature (Fluffy Fried Bread)": [
-          "2 cups all-purpose flour (maida)",
-          "2 tablespoons semolina (sooji/rava)",
+          "2 cups all-purpose flour",
           "1/2 teaspoon baking powder",
-          "1/4 teaspoon baking soda",
-          "1/2 teaspoon sugar",
-          "1/4 teaspoon salt",
-          "1/4 cup plain yogurt (curd)",
-          "Water (as needed for kneading)",
-          "Oil (for deep frying)"
+          "1/4 cup plain yogurt",
+          "Water as needed",
+          "Oil for deep frying"
         ]
       },
       "nutrition": {
@@ -51,18 +37,11 @@
         "Fiber": "10g"
       },
       "instructions": [
-        "Soak chickpeas overnight. Pressure cook with water and a pinch of salt until soft.",
-        "Heat oil in a pan. Add cumin seeds and let them splutter.",
-        "Stir in tomato puree and cook until oil separates.",
-        "Saute onions until golden. Add ginger-garlic paste and green chilies.",
-        "Add cooked chickpeas with water. Simmer for 10-15 minutes.",
-        "Add chole masala, amchur powder, and salt. Garnish with coriander leaves.",
-        "In a bowl, mix flour, semolina, baking powder, baking soda, sugar, and salt.",
-        "Add yogurt and mix. Gradually add water to knead a soft dough.",
-        "Cover with a damp cloth and rest for 1-2 hours.",
-        "Divide dough into balls. Roll each into a round or oval shape.",
-        "Heat oil in a deep pan. Fry bhature until golden and puffed.",
-        "Drain on paper towels and serve hot with chole."
+        "Soak chickpeas overnight and cook.",
+        "Heat oil, add cumin and sauté onions.",
+        "Add tomato puree and spices.",
+        "Mix in chickpeas and simmer.",
+        "Prepare dough, roll out bhature and deep fry."
       ]
     },
     {
@@ -80,26 +59,16 @@
       "ingredients": {
         "For the Gravy": [
           "2 tablespoons butter",
-          "1 tablespoon oil",
-          "1 large onion (finely chopped)",
+          "1 onion (chopped)",
           "3 tomatoes (pureed)",
-          "1 tablespoon ginger-garlic paste",
-          "1-2 green chilies (chopped)",
           "1 teaspoon red chili powder",
-          "1 teaspoon garam masala",
-          "1/2 teaspoon turmeric powder",
-          "1 teaspoon coriander powder",
-          "1 teaspoon kasuri methi (dried fenugreek leaves)",
-          "1/2 cup heavy cream",
-          "Salt to taste",
-          "1/2 teaspoon sugar (optional)"
+          "1 teaspoon kasuri methi",
+          "1/2 cup cream"
         ],
         "For the Paneer": [
-          "250g paneer (cottage cheese, cut into cubes)",
-          "1/4 teaspoon turmeric powder",
-          "1/2 teaspoon red chili powder",
-          "1/2 teaspoon salt",
-          "1 tablespoon oil (for shallow frying)"
+          "250g paneer",
+          "1/4 teaspoon turmeric",
+          "1 tablespoon oil"
         ]
       },
       "nutrition": {
@@ -110,14 +79,124 @@
         "Fiber": "5g"
       },
       "instructions": [
-        "Heat oil in a pan and lightly fry paneer cubes with turmeric, chili powder, and salt. Set aside.",
-        "In the same pan, add butter and oil. Sauté onions until golden brown.",
-        "Add ginger-garlic paste and sauté for a minute until aromatic.",
-        "Pour in tomato puree, red chili powder, turmeric, and coriander powder. Cook until oil separates.",
-        "Add kasuri methi, garam masala, sugar, and salt. Mix well.",
-        "Stir in heavy cream and mix until smooth and creamy.",
-        "Add the fried paneer cubes to the gravy and let it simmer for 5 minutes.",
-        "Garnish with fresh coriander and serve hot with naan or rice."
+        "Fry paneer lightly.",
+        "Sauté onions, add tomato puree and spices.",
+        "Mix in kasuri methi and cream.",
+        "Simmer paneer in the gravy."
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Aloo Gobhi",
+      "author": "Suman",
+      "postedDate": "Today",
+      "ratings": 4.7,
+      "reviews": 29,
+      "description": "A classic Indian dish made with potatoes and cauliflower, seasoned with aromatic spices.",
+      "image": "src/assets/Browse/Aloogobhi.png",
+      "prepTime": "15 MIN",
+      "cookTime": "25 MIN",
+      "servings": "4 PEOPLE",
+      "ingredients": {
+        "Main Ingredients": [
+          "2 potatoes (diced)",
+          "1 small cauliflower (cut into florets)",
+          "2 tablespoons oil",
+          "1 teaspoon cumin seeds",
+          "1 teaspoon turmeric",
+          "1 teaspoon garam masala",
+          "1 teaspoon coriander powder",
+          "Salt to taste"
+        ]
+      },
+      "nutrition": {
+        "Protein": "4g",
+        "Calories": "180g",
+        "Carbohydrates": "30g",
+        "Fats": "8g",
+        "Fiber": "6g"
+      },
+      "instructions": [
+        "Heat oil, add cumin.",
+        "Sauté potatoes until golden.",
+        "Add cauliflower and spices.",
+        "Cover and cook until tender."
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Lassi",
+      "author": "Meera",
+      "postedDate": "Yesterday",
+      "ratings": 4.9,
+      "reviews": 50,
+      "description": "A refreshing yogurt-based drink, perfect for cooling off in the summer.",
+      "image": "src/assets/Browse/Lassi.png",
+      "prepTime": "5 MIN",
+      "cookTime": "0 MIN",
+      "servings": "2 PEOPLE",
+      "ingredients": {
+        "Main Ingredients": [
+          "2 cups yogurt",
+          "1/2 cup chilled water",
+          "2 tablespoons sugar",
+          "1/2 teaspoon cardamom powder",
+          "Crushed ice",
+          "Chopped nuts (optional)"
+        ]
+      },
+      "nutrition": {
+        "Protein": "6g",
+        "Calories": "150g",
+        "Carbohydrates": "20g",
+        "Fats": "5g",
+        "Fiber": "0g"
+      },
+      "instructions": [
+        "Blend yogurt, water, sugar, and cardamom until smooth.",
+        "Serve chilled with ice and nuts."
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Samosa",
+      "author": "Ravi",
+      "postedDate": "2 days ago",
+      "ratings": 4.6,
+      "reviews": 38,
+      "description": "A crispy and flaky deep-fried snack filled with spiced potato stuffing.",
+      "image": "src/assets/Browse/Samosa.png",
+      "prepTime": "20 MIN",
+      "cookTime": "30 MIN",
+      "servings": "6 PEOPLE",
+      "ingredients": {
+        "For the Dough": [
+          "2 cups all-purpose flour",
+          "1/4 cup ghee or oil",
+          "1/2 teaspoon salt",
+          "Water (as needed)"
+        ],
+        "For the Filling": [
+          "3 potatoes (boiled and mashed)",
+          "1/2 cup peas",
+          "1 teaspoon cumin seeds",
+          "1 teaspoon garam masala",
+          "1 teaspoon coriander powder",
+          "Salt to taste"
+        ]
+      },
+      "nutrition": {
+        "Protein": "5g",
+        "Calories": "250g",
+        "Carbohydrates": "35g",
+        "Fats": "10g",
+        "Fiber": "4g"
+      },
+      "instructions": [
+        "Prepare dough and let it rest.",
+        "Heat oil, sauté spices, and mix in potatoes and peas.",
+        "Roll out dough, fill with stuffing, and seal.",
+        "Deep fry until golden and crispy."
       ]
     }
   ]

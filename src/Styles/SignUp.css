@@ -28,9 +28,9 @@
     width: 350px; 
 }  */
 
-.close-button{
+.close-button {
     display: flex;
-    width:100%;
+    width: 100%;
     flex-direction: row-reverse;
 }
 
@@ -59,8 +59,8 @@
 }
 
 .brand-logo {
-    width: 15rem;
-    height: 8rem;
+    width: 10rem;
+    height: 6rem;
     display: block;
     margin: 0;
 }
@@ -73,7 +73,7 @@
 
 .tagLine {
     font-family: "Poppins", sans-serif;
-    font-size: 36px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #333;
     text-align: left;
@@ -90,8 +90,8 @@
 }
 
 .social-logo {
-    width: 60px;
-    height: 60px;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
@@ -104,7 +104,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     width: 80%;
 }
 
@@ -117,12 +117,10 @@
 
 .or-divider {
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 1rem;
     color: #888;
     white-space: nowrap;
 }
-
-
 
 
 
@@ -132,6 +130,10 @@ h2 {
     color: black;
     font-size: 43px;
     text-align: center;
+}
+
+.right-section h2 {
+    font-size: 1.8rem;
 }
 
 .input-group {
@@ -145,13 +147,13 @@ h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     /* Regular weight */
-    margin-top: 10px;
-    font-size: 15px;
+    margin-top: 5px;
+    font-size: 0.8rem;
     color: #333;
 }
 
 label {
-    font-size: 16px;
+    font-size: 0.7rem;
     color: #333;
     /* Adds space between the label and the input field */
 }
@@ -165,10 +167,10 @@ form {
 }
 
 input {
-    padding: 15px;
+    padding: 0.7rem;
     border-radius: 5px;
     border: 1px solid #ccc;
-    font-size: 16px;
+    font-size: 0.8rem;
     background-color: white;
     width: 100%;
 }
@@ -179,8 +181,14 @@ button {
     background: #928783;
     color: white;
     border: none;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     cursor: pointer;
+}
+
+.close-button button {
+    background: #928783;
+    padding: 0.4rem;
+    font-size: 0.6rem;
 }
 
 /* Small Login/Signup Button */
@@ -198,7 +206,7 @@ button {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     /* Regular weight */
-    font-size: 15px;
+    font-size: 0.6rem;
     /* 15px size */
 }
 
