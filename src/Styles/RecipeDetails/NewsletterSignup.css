@@ -1,0 +1,79 @@
+.newsletter-signup {
+    background-color: #ffd7c9;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+    font-family: serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .newsletter-description {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .newsletter-input {
+    flex: 1;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.25rem;
+    background-color: #ffffff; /* Set background to white */
+    color: #000000; /* Set text color to black */
+}
+
+/* Ensure placeholder text is also visible */
+.newsletter-input::placeholder {
+    color: #666; /* Optional: Slightly gray for better readability */
+}
+
+/* When focused, the input remains clearly visible */
+.newsletter-input:focus {
+    outline: none;
+    border-color: #ff642f; /* Highlight border in primary theme color */
+    box-shadow: 0px 0px 5px rgba(255, 100, 47, 0.3);
+}
+
+  
+  .newsletter-button {
+    padding: 0.5rem 1rem;
+    background-color: #ff642f;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #9f4107;
+  } 
+
+  .newsletter-message {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  /* Success Message */
+  .newsletter-message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+  }
+  
+  /* Error Message */
+  .newsletter-message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+  }
+  

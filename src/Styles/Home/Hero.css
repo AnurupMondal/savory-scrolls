@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@700&display=swap');
+
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background: #fff;
+  margin-top: 90px
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+  margin-left: 5px;
+  color: black;
+  height: 100%;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  font-family: 'Poltawski Nowy', serif;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.4rem;
+  font-family: 'poppins', serif;
+  height: 9rem;
+  margin-top: 1rem;
+}
+
+.hero-stats {
+  font-size: 1rem;
+  display: flex;
+  color: #3949ab;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+span {
+  font-family: 'poppins', serif;
+}
+
+span img {
+  margin-right: 10px;
+}
+
+a {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+a img {
+  width: 45px;
+  height: 45px;
+}
+
+.expandable-link {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  /* Optional: Rounded corners */
+}
+
+.expandable-link img {
+  margin-left: 10px;
+  /* Space between text and arrow */
+  transition: all 0.3s ease;
+  /* Smooth transition for the image */
+  border: 2px solid transparent;
+  /* Initial transparent border */
+  border-radius: 5px;
+  /* Optional: Rounded corners for the image */
+}
+
+.expandable-link:hover img {
+  border-color: #007BFF;
+  /* Border color on hover */
+  transform: scale(1.1);
+  /* Slightly expand the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a shadow */
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+}

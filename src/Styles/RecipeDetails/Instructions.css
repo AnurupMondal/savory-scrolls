@@ -1,0 +1,68 @@
+/* Main container */
+.instructions {
+  max-width: 750px;
+  margin: auto;
+  padding: 2rem;
+}
+
+/* Title styling */
+.instructions-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 2rem;
+}
+
+/* Instructions list */
+.instructions-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6rem;
+  list-style: none;
+}
+
+/* Individual step */
+.instruction-item {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Step number styling (Orange Circle) */
+.instruction-step {
+  font-size: 1rem;
+  color: white;
+  background-color: #FF5733;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: end;
+}
+
+/* Step text */
+.instruction-text {
+  font-size: 1rem;
+  color: #4A4A4A;
+  line-height: 1.5;
+  padding-top: 4px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .instructions {
+    padding: 1rem;
+  }
+  
+  .instructions-title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .instructions-list {
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+.ratings-container {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    background: rgba(255, 193, 7, 0.15);
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+  
+.ratings-container:hover {
+    background: rgba(255, 193, 7, 0.3);
+}
+  
+.star-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transition: transform 0.2s ease-in-out, color 0.2s;
+    cursor: pointer;
+    color: #ddd;
+}
+  
+.star-icon.active {
+    color: #fbbf24;
+    transform: scale(1.1);
+}
+  
+.star-icon:hover {
+    color: #facc15;
+    transform: scale(1.2);
+}
