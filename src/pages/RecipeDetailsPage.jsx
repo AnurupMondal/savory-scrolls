@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import RecipeHeader from "../components/RecipeHeader";
+import RecipeHeader from "../components/RecipeDetails/RecipeHeader";
 import IngredientsList from "../components/RecipeDetails/IngredientsList";
 import NutritionFacts from "../components/RecipeDetails/NutritionFacts";
 import RecipeDetails from "../components/RecipeDetails/RecipeDetails";

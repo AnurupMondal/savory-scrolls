@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { Clock } from "lucide-react"
-import "../styles/RecipeDetails.css"
+import "../../Styles/RecipeDetails/RecipeDetails.css"
 
 const RecipeDetails = ({ prepTime, cookTime, servings }) => {
   return (

@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import { Share2, Bookmark, Calendar, MessageCircle } from "lucide-react";
 import Rating from "./Rating"; // Import the new reusable component
-import "../styles/RecipeHeader.css";
-import authorAvatar from "./assets/author-avatar.png"; // Ensure correct path
+import "../../Styles/RecipeDetails/RecipeHeader.css"; // Ensure correct path
+import authorAvatar from "../../assets/author-avatar.png"; // Ensure correct path
 
 const RecipeHeader = ({ title, author, postedDate, initialRatings, reviews, description }) => {
   return (

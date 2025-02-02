@@ -1,4 +1,3 @@
-import React from "react";
 import "../../Styles/Home/Categories.css"
 import northIndian from "../../assets/Categories/north-indian.png";
 import paratha from "../../assets/Categories/Paratha.png";

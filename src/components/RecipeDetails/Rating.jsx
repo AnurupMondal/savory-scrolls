@@ -1,7 +1,7 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { Star } from "lucide-react";
-import "../styles/Rating.css";
+import "../../Styles/RecipeDetails/Rating.css";
 
 const Rating = ({ initialRating = 0, onRatingChange }) => { // Default to 0
   const [rating, setRating] = useState(initialRating);

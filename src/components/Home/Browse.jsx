@@ -1,5 +1,5 @@
-import React, { useState } from "react";
 import { Bookmark } from "lucide-react";
+import { useState } from "react";
 import Pagination from "./Pagination";
 import "../../Styles/Home/Browse.css";
 import butterMasala from "../../assets/Browse/Butter-Masala.png";

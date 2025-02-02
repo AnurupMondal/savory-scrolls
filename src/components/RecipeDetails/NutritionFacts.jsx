@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "../styles/NutritionFacts.css";
+import "../../Styles/RecipeDetails/NutritionFacts.css"; 
 
 const NutritionFacts = ({ nutrition }) => {
   return (
