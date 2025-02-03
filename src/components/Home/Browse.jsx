@@ -68,7 +68,10 @@ const Browse = () => {
           <div
             key={recipe.id}
             className="recipe-card"
-            onClick={() => navigate(`/recipe/${recipe.id}`)}
+            onClick={() => {
+              window.scrollTo(0, 0);
+              navigate(`/recipe/${recipe.id}`);
+            }}
           >
             <div className="bookmark-icon" onClick={(e) => toggleBookmark(recipe.id, e)}>
               <Bookmark
