@@ -1,0 +1,114 @@
+/* RecipeForm.css */
+
+.recipe-form-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.form-description {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.image-upload {
+  background-color: #fbd1c4;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed #e07b67;
+  cursor: pointer;
+}
+
+.form-label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.form-input,
+.form-textarea,
+.form-dropdown {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.time-input-group {
+  display: flex;
+  gap: 10px;
+}
+
+.time-input {
+  width: 50px;
+  padding: 10px;
+}
+.time-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.ingredient-row,
+.step-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add-btn,
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-btn {
+  color: #e07b67;
+  font-weight: bold;
+}
+
+.remove-btn {
+  color: red;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: none;
+  border: 2px solid #e07b67;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #e07b67;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #e07b67;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}

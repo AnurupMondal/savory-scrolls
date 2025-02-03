@@ -1,4 +1,5 @@
-import "../../Styles/Home/Categories.css"
+import { Link } from "react-router-dom";
+import "../../Styles/Home/Categories.css";
 import northIndian from "../../assets/Categories/north-indian.png";
 import paratha from "../../assets/Categories/Paratha.png";
 import dessert from "../../assets/Categories/Dessert.png";
@@ -20,7 +21,7 @@ const Popular = () => {
         <div className="popular-container">
             <div className="Pop">
                 <h2>Popular Categories</h2>
-                <button className="add-recipe-btn">+ ADD A RECIPE</button>
+                <Link to="/recipe-form" className="add-recipe-btn">+ ADD A RECIPE</Link>
             </div>
             <div className="popular-grid">
                 {categories.map((category, index) => (
