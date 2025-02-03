@@ -57,10 +57,8 @@ const RecipeDetailsPage = () => {
         <div className="recipe-content">
           {/* Left Main Content */}
           <div className="recipe-main">
-            <h2>Ingredients</h2>
             <IngredientsList ingredients={recipe.ingredients} />
 
-            <h2>Instructions</h2>
             {recipe.instructions && recipe.instructions.length > 0 ? (
               <Instructions steps={recipe.instructions} />
             ) : (

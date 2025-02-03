@@ -3,7 +3,6 @@ import "../../Styles/RecipeDetails/Instructions.css";
 
 const Instructions = ({ steps }) => {
   return (
-    <div className="instructions">
       <div className="instructions-list">
         <h2>Instructions</h2>
         {steps.map((step, index) => (
@@ -13,7 +12,6 @@ const Instructions = ({ steps }) => {
           </div>
         ))}
       </div>
-    </div>
   );
 };
 

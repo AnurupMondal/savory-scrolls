@@ -8,25 +8,38 @@
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
-  
+
 .ratings-container:hover {
     background: rgba(255, 193, 7, 0.3);
 }
-  
+
+/* Star Icon Default */
 .star-icon {
     width: 1.5rem;
     height: 1.5rem;
     transition: transform 0.2s ease-in-out, color 0.2s;
     cursor: pointer;
-    color: #ddd;
+    color: #ddd; /* Default unselected color */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    display: inline-block;
 }
-  
+
+/* Active (Filled) Stars */
 .star-icon.active {
-    color: #fbbf24;
+    color: #fbbf24; /* Golden yellow */
     transform: scale(1.1);
 }
-  
+
+/* Hover Effect */
 .star-icon:hover {
     color: #facc15;
     transform: scale(1.2);
+}
+
+/* Ensure the spacing between stars is uniform */
+.star-wrapper {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
 }
