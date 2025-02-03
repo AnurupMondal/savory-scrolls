@@ -42,7 +42,7 @@ const RecipeDetailsPage = () => {
 
         <div className="recipe-image-container">
           <img
-            src={`../${recipe.image}` || "/placeholder.svg"}
+            src={recipe.image ? `../${recipe.image}` : "/placeholder.svg"}
             alt={recipe.title}
             className="recipe-image"
           />
