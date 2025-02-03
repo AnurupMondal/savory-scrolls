@@ -32,7 +32,7 @@ h3 {
 
 .recipe-image2 {
     width: 40%;
-    max-width: 200px;
+    max-width: 160px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
