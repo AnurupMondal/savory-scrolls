@@ -1,5 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import RecipeHeader from "../components/RecipeDetails/RecipeHeader";
 import IngredientsList from "../components/RecipeDetails/IngredientsList";
 import NutritionFacts from "../components/RecipeDetails/NutritionFacts";
@@ -14,11 +16,20 @@ const RecipeDetailsPage = () => {
   const recipe = recipes.find((r) => r.id === parseInt(id));
 
   if (!recipe) {
-    return <div className="error-message">Recipe not found</div>;
+    return (
+      <div className="recipe-details-page">
+        <Navbar />
+        <main className="main-content">
+          <div className="error-message">Recipe not found</div>
+        </main>
+        <Footer />
+      </div>
+    );
   }
 
   return (
     <div className="recipe-details-page">
+      <Navbar />
       <main className="main-content">
         <RecipeHeader
           title={recipe.title}
@@ -46,6 +57,7 @@ const RecipeDetailsPage = () => {
         <div className="recipe-content">
           {/* Left Main Content */}
           <div className="recipe-main">
+            <h2>Ingredients</h2>
             <IngredientsList ingredients={recipe.ingredients} />
 
             <h2>Instructions</h2>
@@ -63,6 +75,7 @@ const RecipeDetailsPage = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 };
