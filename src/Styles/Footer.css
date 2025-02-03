@@ -1,7 +1,7 @@
 .footer-container {
     background-color: #faf4f2;
     color: #7c7c7c;
-    padding: 20px 20px 0;
+    padding: 1.5rem 3rem 0;
     font-family: 'Arial', sans-serif;
 }
 
@@ -23,9 +23,11 @@
     font-weight: bold;
     color: #333;
 }
-.footer-logo img{
- width:150px;
+
+.footer-logo img {
+    width: 150px;
 }
+
 .logo-s {
     font-size: 3rem;
 }
@@ -84,11 +86,11 @@
     font-size: 0.9rem;
 }
 
-.footer-social-icons{
+.footer-social-icons {
     display: flex;
     justify-content: space-around;
 }
 
-.footer-social-icons img{
-    margin-left:10px;
+.footer-social-icons img {
+    margin-left: 10px;
 }
