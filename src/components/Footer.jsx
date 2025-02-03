@@ -1,10 +1,9 @@
-import React from "react";
-import "../../Styles/Footer.css";
-import logo1 from "../../assets/sitelogo.png";
-import twitterIcon from "../../assets/Twitter.png";
-import facebookIcon from "../../assets/Facebook.png";
-import instagramIcon from "../../assets/Instagram.png";
-import youtubeIcon from "../../assets/Youtube.png";
+import "../Styles/Footer.css";
+import logo1 from "../assets/sitelogo.png";
+import twitterIcon from "../assets/Twitter.png";
+import facebookIcon from "../assets/Facebook.png";
+import instagramIcon from "../assets/Instagram.png";
+import youtubeIcon from "../assets/Youtube.png";
 
 const Footer = () => {
     return (
@@ -15,8 +14,8 @@ const Footer = () => {
                         <img src={logo1} alt="Savory Scrolls Logo" />
                     </h2>
                     <p className="footer-description">
-                        "Cooking is more than just a recipe; it’s an art, a story, and a connection to cultures 
-                        and traditions. Share, explore, and savor the joy of flavors from every corner of the world."
+                        Cooking is more than just a recipe; it’s an art, a story, and a connection to cultures 
+                        and traditions. Share, explore, and savor the joy of flavors from every corner of the world.
                     </p>
                 </div>
                 <div>

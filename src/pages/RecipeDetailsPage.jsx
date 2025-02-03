@@ -1,41 +1,25 @@
 import { useParams } from "react-router-dom";
 import { useSelector } from "react-redux";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Home/Footer";
 import RecipeHeader from "../components/RecipeDetails/RecipeHeader";
 import IngredientsList from "../components/RecipeDetails/IngredientsList";
 import NutritionFacts from "../components/RecipeDetails/NutritionFacts";
 import RecipeDetails from "../components/RecipeDetails/RecipeDetails";
 import Instructions from "../components/RecipeDetails/Instructions";
 import NewsletterSignup from "../components/RecipeDetails/NewsletterSignup";
-import "../Styles/RecipeDetails/RecipeDetailsPage.css";
+import "../Styles/RecipeDetailsPage.css";
 
 const RecipeDetailsPage = () => {
   const { id } = useParams();
-  const recipes = useSelector((state) => state.recipes.recipes); // Get recipes from Redux store
-
-  // Convert id to a number and ensure it matches
-  const recipe = recipes?.find((r) => Number(r.id) === Number(id));
-
-  console.log("Recipe Data in Details Page:", recipe); // Debugging log
+  const recipes = useSelector((state) => state.recipes.recipes);
+  const recipe = recipes.find((r) => r.id === parseInt(id));
 
   if (!recipe) {
-    return (
-      <div className="error-message">
-        <Navbar />
-        <main>
-          <h2>Recipe not found</h2>
-          <p>Sorry, the recipe you are looking for does not exist.</p>
-        </main>
-        <Footer />
-      </div>
-    );
+    return <div className="error-message">Recipe not found</div>;
   }
 
   return (
-    <>
-      <Navbar />
-      <main className="recipe-details-page">
+    <div className="recipe-details-page">
+      <main className="main-content">
         <RecipeHeader
           title={recipe.title}
           author={recipe.author}
@@ -46,18 +30,22 @@ const RecipeDetailsPage = () => {
         />
 
         <div className="recipe-image-container">
-          <img src={recipe.image} alt={recipe.title} className="recipe-image" />
-        </div>  
+          <img
+            src={recipe.image || "/placeholder.svg"}
+            alt={recipe.title}
+            className="recipe-image"
+          />
+        </div>
+
+        <RecipeDetails
+          prepTime={recipe.prepTime}
+          cookTime={recipe.cookTime}
+          servings={recipe.servings}
+        />
 
         <div className="recipe-content">
           {/* Left Main Content */}
           <div className="recipe-main">
-            <RecipeDetails
-              prepTime={recipe.prepTime}
-              cookTime={recipe.cookTime}
-              servings={recipe.servings}
-            />
-            <h2>Ingredients</h2>
             <IngredientsList ingredients={recipe.ingredients} />
 
             <h2>Instructions</h2>
@@ -69,14 +57,13 @@ const RecipeDetailsPage = () => {
           </div>
 
           {/* Right Sidebar */}
-          <aside className="recipe-sidebar">
+          <div className="recipe-sidebar">
             <NutritionFacts nutrition={recipe.nutrition} />
             <NewsletterSignup />
-          </aside>
+          </div>
         </div>
       </main>
-      <Footer />
-    </>
+    </div>
   );
 };
 

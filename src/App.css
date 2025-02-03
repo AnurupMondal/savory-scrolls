@@ -8,17 +8,11 @@
 
 /* Page Background */
 body {
-  /* background: url('../assets/background.jpg') no-repeat center center/cover; */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-
-/* .App {
-  background-color: white;
-  height: 2300px;
-} */
 
 /* Main Container */
 #root {

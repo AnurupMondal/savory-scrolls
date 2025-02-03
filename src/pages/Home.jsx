@@ -5,7 +5,7 @@ import Categories from "../components/Home/Categories";
 import Newsletter from "../components/Home/Newsletter";
 import Browse from "../components/Home/Browse";
 // import Pagination from "../components/Home/Pagination";
-import Footer from "../components/Home/Footer";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
