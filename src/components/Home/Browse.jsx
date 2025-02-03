@@ -6,16 +6,20 @@ import butterMasala from "../../assets/Browse/Butter-Masala.png";
 import alooGobhi from "../../assets/Browse/Aloogobhi.png";
 import Lassi from "../../assets/Browse/Lassi.png";
 import Samosa from "../../assets/Browse/Samosa.png";
+import dalMakhani from "../../assets/dal-makhani.jpg";
+import chole from "../../assets/Hero.png";
+import paneertikka from "../../assets/Paneer-tikka.jpeg";
+import rasgulla from "../../assets/Rasgulla.jpg";
 
 const recipes = [
   { id: 1, name: "Paneer Butter Masala", image: butterMasala, rating: 4.5, description: "A rich and creamy tomato-based curry with paneer." },
   { id: 2, name: "Aloo Gobhi", image: alooGobhi, rating: 5.0, description: "A classic Indian dish made with potatoes and cauliflower." },
   { id: 3, name: "Mango Lassi", image: Lassi, rating: 4.0, description: "A sweet and creamy yogurt-based mango drink." },
   { id: 4, name: "Samosa", image: Samosa, rating: 4.2, description: "A crispy and spicy deep-fried pastry filled with potatoes and peas." },
-  { id: 5, name: "Paneer Tikka", image: "https://source.unsplash.com/200x200/?paneer-tikka", rating: 4.8, description: "Marinated and grilled paneer cubes with spices." },
-  { id: 6, name: "Chole Bhature", image: "https://source.unsplash.com/200x200/?chole-bhature", rating: 4.6, description: "Spicy chickpea curry served with fluffy fried bread." },
-  { id: 7, name: "Dal Makhani", image: "https://source.unsplash.com/200x200/?dal-makhani", rating: 4.7, description: "Slow-cooked black lentils in a creamy butter sauce." },
-  { id: 8, name: "Rasgulla", image: "https://source.unsplash.com/200x200/?rasgulla", rating: 4.3, description: "Soft and spongy cottage cheese balls in sugar syrup." },
+  { id: 5, name: "Paneer Tikka", image: paneertikka, rating: 4.8, description: "Marinated and grilled paneer cubes with spices." },
+  { id: 6, name: "Chole Bhature", image: chole, rating: 4.6, description: "Spicy chickpea curry served with fluffy fried bread." },
+  { id: 7, name: "Dal Makhani", image: dalMakhani, rating: 4.7, description: "Slow-cooked black lentils in a creamy butter sauce." },
+  { id: 8, name: "Rasgulla", image: rasgulla, rating: 4.3, description: "Soft and spongy cottage cheese balls in sugar syrup." },
   { id: 9, name: "Gulab Jamun", image: "https://source.unsplash.com/200x200/?gulab-jamun", rating: 4.9, description: "Sweet, deep-fried dumplings soaked in sugar syrup." },
   { id: 10, name: "Pav Bhaji", image: "https://source.unsplash.com/200x200/?pav-bhaji", rating: 4.4, description: "Spicy mashed vegetable curry served with buttered bread." },
   { id: 11, name: "Dosa", image: "https://source.unsplash.com/200x200/?dosa", rating: 4.5, description: "A crispy, thin pancake made from fermented rice and lentil batter." },
@@ -65,7 +69,7 @@ const Browse = () => {
               size={24}
             />
           </div>
-          <img src={recipe.image} alt={recipe.name} className="recipe-image" />
+          <img src={recipe.image} alt={recipe.name} className="recipe-image2" />
           <div className="sub-card">
             <h3 className="recipe-name">{recipe.name}</h3>
             <p className="recipe-description">{recipe.description}</p>

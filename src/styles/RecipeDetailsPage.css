@@ -1,5 +1,5 @@
 .recipe-details-page {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -31,6 +31,7 @@
 .recipe-image {
   width: 100%;
   height: 100%;
+  max-width: 100%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
 }
@@ -69,7 +70,9 @@
   margin: 2rem 9.5rem;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
 }
@@ -79,7 +82,8 @@ p {
   color: #555;
 }
 
-a, button {
+a,
+button {
   transition: all 0.3s ease;
 }
 
