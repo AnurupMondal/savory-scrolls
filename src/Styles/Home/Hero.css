@@ -4,7 +4,7 @@
 .hero-container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 3rem;
   background: #fff;
   margin-top: 90px
 }
@@ -66,27 +66,19 @@ a img {
   text-decoration: none;
   color: #000;
   border-radius: 5px;
-  /* Optional: Rounded corners */
 }
 
 .expandable-link img {
   margin-left: 10px;
-  /* Space between text and arrow */
   transition: all 0.3s ease;
-  /* Smooth transition for the image */
   border: 2px solid transparent;
-  /* Initial transparent border */
   border-radius: 5px;
-  /* Optional: Rounded corners for the image */
 }
 
 .expandable-link:hover img {
   border-color: #007BFF;
-  /* Border color on hover */
   transform: scale(1.1);
-  /* Slightly expand the image */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  /* Optional: Add a shadow */
 }
 
 .hero-image img {
