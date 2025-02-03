@@ -52,7 +52,7 @@
       "ratings": 4.8,
       "reviews": 45,
       "description": "A rich, creamy, and aromatic paneer dish with a buttery tomato-based gravy.",
-      "image": "src/assets/Browse/chole-bhature.png",
+      "image": "src/assets/Browse/Butter-Masala.png",
       "prepTime": "10 MIN",
       "cookTime": "20 MIN",
       "servings": "4 PEOPLE",
@@ -125,21 +125,22 @@
     },
     {
       "id": 4,
-      "title": "Lassi",
+      "title": "Mango Lassi",
       "author": "Meera",
       "postedDate": "Yesterday",
       "ratings": 4.9,
       "reviews": 50,
-      "description": "A refreshing yogurt-based drink, perfect for cooling off in the summer.",
+      "description": "A delicious and refreshing mango-flavored yogurt drink, perfect for summer.",
       "image": "src/assets/Browse/Lassi.png",
       "prepTime": "5 MIN",
       "cookTime": "0 MIN",
       "servings": "2 PEOPLE",
       "ingredients": {
         "Main Ingredients": [
-          "2 cups yogurt",
-          "1/2 cup chilled water",
-          "2 tablespoons sugar",
+          "1 cup ripe mango pulp",
+          "1 cup yogurt",
+          "1/2 cup chilled water or milk",
+          "2 tablespoons sugar (adjust to taste)",
           "1/2 teaspoon cardamom powder",
           "Crushed ice",
           "Chopped nuts (optional)"
@@ -147,14 +148,14 @@
       },
       "nutrition": {
         "Protein": "6g",
-        "Calories": "150g",
-        "Carbohydrates": "20g",
+        "Calories": "180g",
+        "Carbohydrates": "30g",
         "Fats": "5g",
-        "Fiber": "0g"
+        "Fiber": "2g"
       },
       "instructions": [
-        "Blend yogurt, water, sugar, and cardamom until smooth.",
-        "Serve chilled with ice and nuts."
+        "Blend mango pulp, yogurt, water/milk, sugar, and cardamom powder until smooth.",
+        "Serve chilled with crushed ice and garnish with chopped nuts if desired."
       ]
     },
     {

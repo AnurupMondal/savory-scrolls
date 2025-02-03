@@ -53,6 +53,25 @@ h3 {
     margin-bottom: 10px;
 }
 
+.recipes-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 90%;
+}
+
+/* Hover effect for cards */
+.recipe-card {
+    cursor: auto;
+    margin: 0.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+
 .star-rating {
     font-size: 20px;
     color: #ffcc00;
