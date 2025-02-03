@@ -17,7 +17,7 @@
 .instructions-list {
   display: flex;
   flex-direction: column;
-  padding-left: 6rem;
+  gap: 1rem;
   list-style: none;
 }
 
@@ -35,8 +35,8 @@
   color: white;
   background-color: #FF5733;
   border-radius: 50%;
-  width: 28px;
-  height: 28px;
+  width: 20px;
+  height: 20px;
   display: flex;
   justify-content: center;
   align-items: center;

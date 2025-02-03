@@ -1,41 +1,63 @@
 .newsletter-signup {
-    background-color: #ffd7c9;
-    padding: 1.5rem;
-    /* border-radius: 0.5rem; */
+  background-color: #ffd7c9;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.newsletter-title {
+  font-size: 1.75rem;
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.newsletter-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.newsletter-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.newsletter-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #ff642f;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.newsletter-button:hover {
+  background-color: #9f4107;
+}
+
+/* Responsive Fixes */
+@media (max-width: 600px) {
+  .newsletter-signup {
+      max-width: 90%;
   }
-  
-  .newsletter-title {
-    font-size: 2rem;
-    font-family: serif;
-    margin-bottom: 0.5rem;
-  }
-  
-  .newsletter-description {
-    color: #666;
-    margin-bottom: 2rem;
-  }
-  
-  .newsletter-form {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  .newsletter-input {
-    flex: 1;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid #d1d5db;
-    border-radius: 0.25rem;
-  }
-  
-  .newsletter-button {
-    padding: 0.5rem 1rem;
-    background-color: #ff642f;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-  }
-  
-  .newsletter-button:hover {
-    background-color: #9f4107;
-  }  
+}

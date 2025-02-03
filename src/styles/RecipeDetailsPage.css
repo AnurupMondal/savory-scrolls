@@ -43,7 +43,7 @@
 .recipe-content {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 @media (min-width: 750px) {
@@ -53,10 +53,10 @@
 }
 
 .recipe-main {
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  gap: 2rem;
-  margin: auto auto;
+  /* gap: 0rem; */
+  margin: auto;
 }
 
 .recipe-sidebar {
@@ -70,27 +70,27 @@
   margin: 2rem 9.5rem;
 }
 
-h1,
-h2,
+/* h1, */
+/* h2,
 h3 {
   font-family: "Playfair Display", serif;
   font-weight: bold;
-}
+} */
 
-p {
+/* p {
   line-height: 1.6;
   color: #555;
-}
+} */
 
-a,
+/* a,
 button {
   transition: all 0.3s ease;
-}
+} */
 
-a {
+/* a {
   text-decoration: none;
   color: #333;
-}
+} */
 
 a:hover {
   color: #d97706;
